@@ -89,7 +89,7 @@ Explainable-Credit-Risk-Scoring/
 
 ```bash
 # Clone repository:
-git clone https://github.com/girishshenoy16/Explainable-Credit-Risk-Scoring
+git clone https://github.com/girishshenoy16/Explainable-Credit-Risk-Scoring.git
 
 cd Explainable-Credit-Risk-Scoring
 
