@@ -357,15 +357,47 @@ cd Explainable-Credit-Risk-Scoring
 
 ---
 
-## 2️⃣ Install Dependencies
+## 2️⃣ Create Virtual Environment
+
+### Windows
 
 ```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### Mac/Linux
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+## 3️⃣ Install Dependencies
+
+```bash
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 ---
 
-## 3️⃣ Run Streamlit Dashboard
+## 4️⃣ Run ML Pipeline
+
+```bash
+python src/data_preprocessing.py
+python src/feature_engineering.py
+python src/train_model.py
+python src/evaluate_model.py
+python src/explain_model.py
+python src/fairness_analysis.py
+```
+
+---
+
+## 5️⃣ Run Streamlit Dashboard
 
 ```bash
 streamlit run dashboard/app.py
